@@ -3,6 +3,10 @@ name = "gregcsokas-backend-rust"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "main"
+path = "main/src/main.rs"
+
 [workspace]
 members = [
     "main",

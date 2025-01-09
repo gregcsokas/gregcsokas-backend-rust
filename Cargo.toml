@@ -4,10 +4,15 @@ version = "0.1.0"
 edition = "2021"
 
 [workspace]
-members = [ "main","newsletter"]
+members = [
+    "main",
+    "newsletter"
+]
 
 [workspace.dependencies]
 tokio = { version = "1.43.0", features = ["full"] }
+
+newsletter = { path = "newsletter"}
 
 [workspace.dependencies.axum]
 version = "0.8.1"

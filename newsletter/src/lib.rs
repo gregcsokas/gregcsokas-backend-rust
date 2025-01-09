@@ -1,17 +1,10 @@
+mod handlers;
+
 use axum::{
     routing::{get, post},
     Router,
 };
-
-
-async fn newsletter_home() -> &'static str {
-    "Welcome to the newsletter!"
-}
-
-async fn subscribe_handler() -> &'static str {
-    "You have subscribed!"
-}
-
+use crate::handlers::{newsletter_home, subscribe_handler};
 
 pub fn newsletter_routes() -> Router {
     Router::new()
